@@ -13,131 +13,418 @@
     />
     <link
       rel="shortcut icon"
-      href="Imagens/HARMONIZA_novo.pdf-removebg-preview (1).png"
+      href="./Imagens/logo-cortado.png"
       type="image/x-icon"
     />
     <link rel="stylesheet" href="style.css" />
     <script src="./index.js" defer></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light header">
-      <div class="container">
-        <a class="navbar-brand" href="#"
-          ><img
-            src="Imagens/HARMONIZA_novo.pdf-removebg-preview (1).png"
-            class="img-thumbnail logoImg"
-            alt="logo"
-        /></a>
-        <div class="container-fluid logo">
+    <div class="container01">
+      <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-light header">
+          <div class="container containerHeader" style="flex-wrap: nowrap">
+            <a class="navbar-brand" href="#"
+              ><img
+                src="Imagens/HARMONIZA_novo.pdf-removebg-preview (1).png"
+                class="img-thumbnail logoImg"
+                alt="logo"
+            /></a>
+            <div class="container-fluid logo" style="flex-wrap: no-wrap">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarText"
+                aria-controls="navbarText"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 botaoNav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#prof">Dentista</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#tratamentos">Tratamento</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#map">Como Chegar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#avaliacao">Agendar</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="container02">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
           <button
-            class="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarText"
-            aria-controls="navbarText"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#prof">Dentista</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#tratamentos">Tratamento</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#map">Como Chegar</a>
-              </li>
-            </ul>
-            <span class="navbar-text botao"
-              ><a class="agendar" href="#">Agendar sua avaliação</a></span
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner cImgs">
+          <div class="carousel-item active">
+            <img
+              src="./Imagens/fundo-de-cor-gradiente-dourado-para-pano-de-fundo-abstrato-criativo_120819-121.webp"
+              class="d-block w-100"
+              alt="c1"
+            />
+          </div>
+          <div class="carousel-item cImgs">
+            <img
+              src="./Imagens/fundo-e-textura-do-sumario-da-parede-do-ouro_89729-503.webp"
+              class="d-block w-100"
+              alt="c2"
+            />
+          </div>
+          <div class="carousel-item cImgs">
+            <img
+              src="./Imagens/cd4a4827d9ca6da0c84719cd43013a22.jpg"
+              class="d-block w-100"
+              alt="c3"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="prof" id="prof">
+      <div class="container profissional">
+        <div class="profImg">
+          <img src="Imagens/17004.png" alt="profissional" />
+          <p>Nome do profissional</p>
+          <p>CRO 9999999</p>
+        </div>
+        <div class="profText">
+          <div class="profText-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="currentColor"
+              class="bi bi-balloon-heart"
+              id="icon1"
+              viewBox="0 0 16 16"
+              style="color: #daa947"
             >
+              <path
+                fill-rule="evenodd"
+                d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721L8 2.42Zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063.045.041.089.084.132.129.043-.045.087-.088.132-.129 3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3.177 3.177 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398Z"
+              />
+            </svg>
+            <p>Atendimento personalizado e cuidado humano</p>
+          </div>
+          <div class="profText-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="currentColor"
+              class="bi bi-person-circle"
+              viewBox="0 0 16 16"
+              id="icon2"
+              style="color: #daa947"
+            >
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+              <path
+                fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+              />
+            </svg>
+            <p>Equipe experiente e atenciosa</p>
+          </div>
+          <div class="profText-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="currentColor"
+              class="bi bi-coin"
+              viewBox="0 0 16 16"
+              id="icon1"
+              style="color: #daa947"
+            >
+              <path
+                d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"
+              />
+              <path
+                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+              />
+              <path
+                d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"
+              />
+            </svg>
+            <p>Preços transparentes</p>
           </div>
         </div>
       </div>
-    </nav>
-    <div
-      id="carouselExampleIndicators"
-      class="carousel slide"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
-      <div class="carousel-inner cImgs">
-        <div class="carousel-item active">
-          <img
-            src="Imagens/fundo-abstrato-aquarela-de-inverno-azul_23-2149147677.webp"
-            class="d-block w-100"
-            alt="c1"
-          />
-        </div>
-        <div class="carousel-item cImgs">
-          <img
-            src="Imagens/fundo-aquarela-azul-e-roxo_125540-1077.jpg"
-            class="d-block w-100"
-            alt="c2"
-          />
-        </div>
-        <div class="carousel-item cImgs">
-          <img
-            src="Imagens/6de893591ed5f35fa32a8e4718456068.jpg"
-            class="d-block w-100"
-            alt="c3"
-          />
+    </div>
+    <div class="container">
+      <div class="atendimento" id="ava">
+        <div class="up">
+          <div class="data">
+            <h3 id="day"></h3>
+          </div>
+          <div class="horario">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="currentColor"
+              class="bi bi-stopwatch"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"
+              />
+              <path
+                d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"
+              />
+            </svg>
+            <div class="horarioTxt">
+              <h5>Horário de Atendimento</h5>
+              <p id="horario">08:00 - 18:00</p>
+            </div>
+          </div>
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+    </div>
+    <div class="container">
+      <div class="galeria">
+        <div class="galeriaTitle">
+          <h1>Galeria</h1>
+        </div>
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner cImgs cImgs2">
+            <div class="carousel-item active">
+              <img
+                src="./Imagens/Modelo-de-fachada-de-loja.-Fonte-Pinterest.webp"
+                class="d-block w-100"
+                alt="loja"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./Imagens/fachada-de-loja-investir.jpg "
+                class="d-block w-100"
+                alt="loja1"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./Imagens/fachada-1200x675.png"
+                class="d-block w-100"
+                alt="loja2"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="tratamentos" id="tratamentos">
+        <h4>
+          Conheça os tratamentos odontológicos que vão transformar a sua
+          qualidade de vida
+        </h4>
+        <h3>Revele seu melhor sorriso</h3>
+        <div class="servicos">
+          <div class="card" style="width: 18rem">
+            <img
+              src="./Imagens/main_female-patient-receiving-an-injection-on-her-face.jpg"
+              class="card-img-top"
+              alt="img-exemplo"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Tratamento</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur aperiam, earum porro alias ex quo ipsum. Minus eaque
+                debitis asperiores!
+              </p>
+              <a href="#" class="btn">Saiba mais</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="./Imagens/main_female-patient-receiving-an-injection-on-her-face.jpg"
+              class="card-img-top"
+              alt="img-exemplo"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Tratamento</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur aperiam, earum porro alias ex quo ipsum. Minus eaque
+                debitis asperiores!
+              </p>
+              <a href="#" class="btn">Saiba mais</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="./Imagens/main_female-patient-receiving-an-injection-on-her-face.jpg"
+              class="card-img-top"
+              alt="img-exemplo"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Tratamento</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur aperiam, earum porro alias ex quo ipsum. Minus eaque
+                debitis asperiores!
+              </p>
+              <a href="#" class="btn">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="depoimentos">
+        <img
+          src="./Imagens/logo-cortado.png"
+          alt="logoCortado"
+          class="logocortado"
+        />
+        <div class="frase-depoimentos">
+          <h3>É tudo sobre o seu sorriso!</h3>
+          <h4>
+            Veja os depoimentos de quem escolheu viver de frente com a gente
+          </h4>
+        </div>
+        <div class="videos">
+          <iframe
+            width="320"
+            height="315"
+            src="https://www.youtube.com/embed/Rn8R3LkbWWU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="320"
+            height="315"
+            src="https://www.youtube.com/embed/Rn8R3LkbWWU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="320"
+            height="315"
+            src="https://www.youtube.com/embed/Rn8R3LkbWWU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="containerAva" id="avaliacao">
+      <div class="avaliacao">
+        <h3>Forneça seus dados para agendar uma avaliação</h3>
+        <input type="text" placeholder="Nome" />
+        <input type="text" placeholder="Seu melhor e-mail" />
+        <input type="text" placeholder="Telefone" />
+        <input
+          type="text"
+          name="list"
+          id="list"
+          list="lista"
+          placeholder="Serviço 1"
+        />
+        <datalist id="lista">
+          <option value="Serviço 1"></option>
+          <option value="Serviço 2"></option>
+          <option value="Serviço 3"></option>
+          <option value="Serviço 4"></option>
+          <option value="Serviço 5"></option>
+          <option value="Serviço 6"></option>
+        </datalist>
+
+        <button>Solicitar</button>
+      </div>
     </div>
     <div class="propaganda">
       <div class="container">
         <div class="fale-conosco">
           <h2>Fale Conosco</h2>
+          <img src="./Imagens/logo-cortado.png" alt="logocortado" />
           <div class="tel">
             <div class="telefone">
               <svg
@@ -199,228 +486,33 @@
             <div class="textpro">
               <h5>Encontre-nos</h5>
               <a href="https://goo.gl/maps/iaPAuQYHBhdn6mYJ6"
-                >Praça Dr. Emílio Silveira - Centro 252 - Centro, Alfenas - MG,
-                37130-029</a
+                >Praça Dr. Emílio Silveira 252. Alfenas, MG</a
               >
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="prof" id="prof">
-      <div class="container profissional">
-        <div class="profImg">
-          <img src="Imagens/17004.png" alt="profissional" />
-          <p>Nome do profissional</p>
-          <p>CRO 9999999</p>
-        </div>
-        <div class="profText">
-          <div class="profText-item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="40"
-              fill="currentColor"
-              class="bi bi-balloon-heart"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721L8 2.42Zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063.045.041.089.084.132.129.043-.045.087-.088.132-.129 3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3.177 3.177 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398Z"
-              />
-            </svg>
-            <p>Atendimento personalizado e cuidado humano</p>
-          </div>
-          <div class="profText-item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="40"
-              fill="currentColor"
-              class="bi bi-person-circle"
-              viewBox="0 0 16 16"
-            >
-              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-              <path
-                fill-rule="evenodd"
-                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
-              />
-            </svg>
-            <p>Equipe experiente e atenciosa</p>
-          </div>
-          <div class="profText-item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="40"
-              fill="currentColor"
-              class="bi bi-coin"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"
-              />
-              <path
-                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
-              />
-              <path
-                d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"
-              />
-            </svg>
-            <p>Preços transparentes</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="atendimento">
-        <div class="up">
-          <div class="data">
-            <h3 id="day"></h3>
-          </div>
-          <div class="horario">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="40"
-              fill="currentColor"
-              class="bi bi-stopwatch"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"
-              />
-              <path
-                d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"
-              />
-            </svg>
-            <div class="horarioTxt">
-              <h5>Horário de Atendimento</h5>
-              <p id="horario">08:00 - 18:00</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container containerAva">
-      <div class="avaliacao">
-        <h3>Forneça seus dados para agendar uma avaliação</h3>
-        <input type="text" placeholder="Nome" />
-        <input type="text" placeholder="Seu melhor e-mail" />
-        <input type="text" placeholder="Telefone" />
-        <input
-          type="text"
-          name="list"
-          id="list"
-          list="lista"
-          placeholder="Serviço 1"
-        />
-        <datalist id="lista">
-          <option value="Serviço 1"></option>
-          <option value="Serviço 2"></option>
-          <option value="Serviço 3"></option>
-          <option value="Serviço 4"></option>
-          <option value="Serviço 5"></option>
-          <option value="Serviço 6"></option>
-        </datalist>
-
-        <button>Solicitar</button>
-      </div>
-    </div>
-    <div class="container">
-      <div class="galeria">
-        <h1>Galeria</h1>
-        <img
-          class="img-fluid"
-          src="Imagens/Modelo-de-fachada-de-loja.-Fonte-Pinterest.webp"
-          alt="fachada"
-        />
-      </div>
-    </div>
-    <div class="container">
-      <div class="tratamentos" id="tratamentos">
-        <h5>
-          Conheça os tratamentos odontológicos que vão transformar a sua
-          qualidade de vida
-        </h5>
-        <h4>Revele seu melhor sorriso</h4>
-        <div class="servicos">
-          <div class="card" style="width: 18rem">
-            <img
-              src="Imagens/main_female-patient-receiving-an-injection-on-her-face.jpg"
-              class="card-img-top"
-              alt="img-exemplo"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Tratamento</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequatur aperiam, earum porro alias ex quo ipsum. Minus eaque
-                debitis asperiores!
-              </p>
-              <a href="#" class="btn">Saiba mais</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem">
-            <img
-              src="Imagens/main_female-patient-receiving-an-injection-on-her-face.jpg"
-              class="card-img-top"
-              alt="img-exemplo"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Tratamento</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequatur aperiam, earum porro alias ex quo ipsum. Minus eaque
-                debitis asperiores!
-              </p>
-              <a href="#" class="btn">Saiba mais</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem">
-            <img
-              src="Imagens/main_female-patient-receiving-an-injection-on-her-face.jpg"
-              class="card-img-top"
-              alt="img-exemplo"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Tratamento</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequatur aperiam, earum porro alias ex quo ipsum. Minus eaque
-                debitis asperiores!
-              </p>
-              <a href="#" class="btn">Saiba mais</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="depoimentos">
-        <div class="frase-depoimentos">
-          <h4>É tudo sobre o seu sorriso!</h4>
-          <h5>
-            Veja os depoimentos de quem escolheu viver de frente com a gente
-          </h5>
-        </div>
-        <div class="videos">
-          <iframe
-            width="610"
-            height="415"
-            src="https://www.youtube.com/embed/Rn8R3LkbWWU"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-    </div>
     <div class="visita">
       <div class="visita-text">
-        <h2>Faça-nos uma visita</h2>
-        <h3>Esperamos você com café quentinho e o melhor atendimento.</h3>
+        <div class="visita-text-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="90"
+            height="80"
+            fill="currentColor"
+            class="bi bi-geo-alt-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+            />
+          </svg>
+        </div>
+        <div class="visita-text-2">
+          <h2>Faça-nos uma visita</h2>
+          <h3>Esperamos você com café quentinho e o melhor atendimento.</h3>
+        </div>
       </div>
       <div class="map" id="map">
         <iframe
@@ -435,11 +527,11 @@
       </div>
       <div class="comvoce">
         <div class="comvoceText">
-          <h2>Com você durante todo o seu tratamento!</h2>
-          <h3>
+          <h3>Com você durante todo o seu tratamento!</h3>
+          <h4>
             Conheça os tratamentos odontológicos que vão transformar a sua
             qualidade de vida
-          </h3>
+          </h4>
         </div>
         <div class="comvoceButton">
           <button>
